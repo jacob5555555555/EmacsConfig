@@ -1,0 +1,4 @@
+#tells git which directories of configuration don't need to be tracked
+auto-save-list/
+eshell/
+url/

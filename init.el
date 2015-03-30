@@ -13,7 +13,7 @@
 ;;set ace jump char key chords
 (key-chord-define-global "fj" 'ace-jump-char-mode)
 (key-chord-define-global "dk" 'line-jump-then-to-indent)
-(key-chord-define-global "j " 'hippie-expand)
+;;(key-chord-define-global "j " 'hippie-expand) ;;dumb because M-/
 
 ;;multiple cursors
 (require 'multiple-cursors)
@@ -31,4 +31,4 @@
 (tool-bar-mode -1)
 
 ;;easy backspace
-(define-key key-translation-map (kbd "C-'") (kbd "DEL"))
+;;(define-key key-translation-map (kbd "C-'") (kbd "DEL"))

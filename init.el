@@ -29,6 +29,7 @@
 
 ;;waste of screen space
 (tool-bar-mode -1)
+(scroll-bar-mode -1)
 
 ;;easy backspace
 ;;(define-key key-translation-map (kbd "C-'") (kbd "DEL"))

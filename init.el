@@ -11,9 +11,10 @@
   (back-to-indentation))
 
 ;;set ace jump char key chords
-(key-chord-define-global "fj" 'ace-jump-char-mode)
+;;replaced next with C-;
+;;(key-chord-define-global "fj" 'ace-jump-char-mode)
 (key-chord-define-global "dk" 'line-jump-then-to-indent)
-;;(key-chord-define-global "j " 'hippie-expand) ;;dumb because M-/
+(global-set-key (kbd "C-;") 'ace-jump-char-mode)
 
 ;;multiple cursors
 (require 'multiple-cursors)
@@ -33,3 +34,16 @@
 
 ;;easy backspace
 ;;(define-key key-translation-map (kbd "C-'") (kbd "DEL"))
+
+;;eazy repeat
+(global-set-key (kbd "C-z") 'repeat)
+
+;;auto paredit
+(add-hook 'cider-mode-hook 'paredit-mode)
+(add-hook 'cider-repl-mode-hook 'paredit-mode)
+
+;;start maximised
+(toggle-frame-maximized)
+
+;;remove welcome screen
+(setq inhibit-startup-message t)

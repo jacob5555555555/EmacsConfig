@@ -3,10 +3,13 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	org-beginning-of-line
 	org-self-insert-command
 	))
 
 (setq mc/cmds-to-run-once
       '(
 	delete-window
+	end-of-buffer
+	org-cycle
 	))

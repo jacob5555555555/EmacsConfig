@@ -1,0 +1,40 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function (:type "int") nil [21 65]))          
+      :file "main.c"
+      :pointmax 66
+      :fsize 65
+      :lastmodtime '(21801 58918 548561 283000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ArrayPiece.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("Arraypiece.h" include (:system-flag t) nil [1 24])
+            ("initArrayPiece" function
+               (:arguments 
+                  ( ("arrp" variable
+                       (:pointer 1
+                        :type ("arrayPiece" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46 70])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [71 80]))                  
+                :type "void")
+                nil [26 153]))          
+      :file "ArrayPiece.c"
+      :pointmax 154
+      :fsize 153
+      :lastmodtime '(21801 61515 508653 767000)
+      :unmatched-syntax nil)
+)
+  :file "!home!user!Desktop!ConstantTimeCollection!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

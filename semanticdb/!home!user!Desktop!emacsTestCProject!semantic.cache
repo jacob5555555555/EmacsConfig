@@ -1,0 +1,28 @@
+;; Object emacsTestCProject/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "emacsTestCProject/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CC_FLAGS" variable (:default-value ("-I" "./include/")) nil [1 27])
+            ("CC" variable (:default-value ("gcc")) nil [27 37])
+            ("FILTER_OUT" variable (:default-value ("$(foreach v,$(2:.c=),$(if $(findstring $(1),$(v)),,$(v).c))")) nil [110 183])
+            ("C_FILES" variable (:default-value ("$(shell find $(SOURCEDIR) -name '*.c')")) nil [212 262])
+            ("C_FILES" variable (:default-value ("$(patsubst ./%, %, $(C_FILES))")) nil [262 304])
+            ("C_FILES" variable (:default-value ("$(call FILTER_OUT,., $(C_FILES))")) nil [371 449])
+            ("OBJ_FILES" variable (:default-value ("$(patsubst src/%,%, $(C_FILES))")) nil [449 494])
+            ("OBJ_FILES" variable (:default-value ("$(OBJ_FILES:.c=.o)")) nil [494 526])
+            ("OBJ_FILES" variable (:default-value ("$(addprefix obj/,$(OBJ_FILES))")) nil [526 570])
+            ("main" function (:arguments ("$(OBJ_FILES)")) nil [636 683])
+            ("obj/%.o" function (:arguments ("src/%.c")) nil [684 754])
+            ("DEPS" variable (:default-value ("$(OBJ_FILES:.o=.d)")) nil [791 818]))          
+      :file "Makefile"
+      :pointmax 861
+      :fsize 860
+      :lastmodtime '(21801 58269 980538 186000)
+      :unmatched-syntax nil))
+  :file "!home!user!Desktop!emacsTestCProject!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

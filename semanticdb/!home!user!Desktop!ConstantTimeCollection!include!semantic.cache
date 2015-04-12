@@ -1,0 +1,115 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "ArrayPiece.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ARRAYPIECE_H" variable (:constant-flag t) nil [30 42])
+            ("COLLECTION_TYPE" variable (:constant-flag t) nil [76 91])
+            ("index_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [104 124])
+            ("hash_b" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [125 144])
+            ("node" type
+               (:members 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [161 182])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [227 245]))                  
+                :type "struct")
+                nil [146 248])
+            ("arrayPiece" type
+               (:members 
+                  ( ("values" variable
+                       (:pointer 1
+                        :type ("node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [344 364])
+                    ("header" variable
+                       (:pointer 1
+                        :type ("index_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [434 450])
+                    ("capacity" variable (:type ("index_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [453 470])
+                    ("size" variable (:type ("index_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [473 486]))                  
+                :type "struct")
+                nil [250 489])
+            ("initArrayPiece" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("arrp" variable
+                       (:pointer 1
+                        :type ("arrayPiece" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [511 535])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [536 545]))                  
+                :type "void")
+                nil [491 546])
+            ("insertEndArrayPiece" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("arrp" variable
+                       (:pointer 1
+                        :type ("arrayPiece" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [572 596])
+                    ("index" variable (:type ("index_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [597 611])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [616 636]))                  
+                :type "void")
+                nil [547 637])
+            ("getArrayPiece" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("arrp" variable
+                       (:pointer 1
+                        :type ("arrayPiece" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [669 693])
+                    ("index" variable (:type ("index_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [694 708]))                  
+                :type "int")
+                nil [639 709])
+            ("destroyArrayPiece" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("arrp" variable
+                       (:pointer 1
+                        :type ("arrayPiece" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [733 758]))                  
+                :type "void")
+                nil [710 759]))          
+      :file "ArrayPiece.h"
+      :pointmax 768
+      :fsize 767
+      :lastmodtime '(21801 60712 340625 164000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("COLLECTION_TYPE" . ((INT "int" 92 . 95)))
+          ("ARRAYPIECE_H")
+          )
+))
+  :file "!home!user!Desktop!ConstantTimeCollection!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

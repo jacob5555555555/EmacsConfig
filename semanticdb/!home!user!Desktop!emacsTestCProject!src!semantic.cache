@@ -1,0 +1,19 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("config.h" include (:system-flag t) nil [20 39])
+            ("main" function (:type "int") nil [41 98]))          
+      :file "main.c"
+      :pointmax 99
+      :fsize 98
+      :lastmodtime '(21801 58293 92539 10000)
+      :unmatched-syntax nil))
+  :file "!home!user!Desktop!emacsTestCProject!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

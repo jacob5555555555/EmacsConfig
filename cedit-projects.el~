@@ -1,0 +1,3 @@
+(ede-cpp-root-project "/home/user/Desktop/testEdeProj/Makefile"
+		      :include-path '("/include")
+		      :system-include-path '("/usr/bin"))

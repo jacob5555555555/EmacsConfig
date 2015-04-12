@@ -1,0 +1,23 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "config.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("bob" variable (:constant-flag t) nil [9 12])
+            ("asdf" variable (:constant-flag t) nil [24 28]))          
+      :file "config.h"
+      :pointmax 37
+      :fsize 36
+      :lastmodtime '(21801 58302 12539 327000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("bob" . ((number "90" 13 . 15)))
+          ("asdf" . ((number "09" 29 . 31)))
+          )
+))
+  :file "!home!user!Desktop!emacsTestCProject!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

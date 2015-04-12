@@ -1,0 +1,38 @@
+;; Object Desktop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Desktop/"
+  :tables
+  (list
+    (semanticdb-table "sampleMakefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CC_FLAGS" variable (:default-value ("-I" "./include/")) nil [1 27])
+            ("CC" variable (:default-value ("gcc")) nil [27 37])
+            ("FILTER_OUT" variable (:default-value ("$(foreach v,$(2:.c=),$(if $(findstring $(1),$(v)),,$(v).c))")) nil [110 183])
+            ("C_FILES" variable (:default-value ("$(shell find $(SOURCEDIR) -name '*.c')")) nil [212 262])
+            ("C_FILES" variable (:default-value ("$(patsubst ./%, %, $(C_FILES))")) nil [262 304])
+            ("C_FILES" variable (:default-value ("$(call FILTER_OUT,., $(C_FILES))")) nil [371 449])
+            ("OBJ_FILES" variable (:default-value ("$(patsubst src/%,%, $(C_FILES))")) nil [449 494])
+            ("OBJ_FILES" variable (:default-value ("$(OBJ_FILES:.c=.o)")) nil [494 526])
+            ("OBJ_FILES" variable (:default-value ("$(addprefix obj/,$(OBJ_FILES))")) nil [526 570])
+            ("main" function (:arguments ("$(OBJ_FILES)")) nil [636 683])
+            ("obj/%.o" function (:arguments ("src/%.c")) nil [684 754])
+            ("DEPS" variable (:default-value ("$(OBJ_FILES:.o=.d)")) nil [791 818]))          
+      :file "sampleMakefile"
+      :pointmax 861
+      :fsize 860
+      :lastmodtime '(21801 58387 612542 376000)
+      :unmatched-syntax '((semantic-list 851 . 857) (punctuation 850 . 851) (symbol 841 . 849) (bol 841 . 841) (semantic-list 819 . 840) (punctuation 818 . 819) (bol 818 . 818) (semantic-list 851 . 857) (punctuation 850 . 851) (symbol 841 . 849) (bol 841 . 841) (semantic-list 819 . 840) (punctuation 818 . 819) (bol 818 . 818) (semantic-list 562 . 589) (punctuation 561 . 562) (bol 561 . 561) (semantic-list 562 . 589) (punctuation 561 . 562) (bol 561 . 561) (semantic-list 339 . 370) (punctuation 338 . 339) (bol 338 . 338) (semantic-list 310 . 337) \.\.\.))
+    (semanticdb-table "test.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function (:type "int") nil [21 82]))          
+      :file "test.c"
+      :pointmax 83
+      :fsize 82
+      :lastmodtime '(21802 44481 118627 74000)
+      :unmatched-syntax nil))
+  :file "!home!user!Desktop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

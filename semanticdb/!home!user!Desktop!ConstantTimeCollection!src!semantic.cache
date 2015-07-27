@@ -11,9 +11,31 @@
       :file "main.c"
       :pointmax 66
       :fsize 65
-      :lastmodtime '(21801 58918 548561 283000)
+      :lastmodtime '(21802 61593 395236 479000)
       :unmatched-syntax nil)
     (semanticdb-table "ArrayPiece.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ArrayPiece.h" include (:system-flag t) nil [1 24])
+            ("malloc.h" include (:system-flag t) nil [25 44])
+            ("initArrayPiece" function
+               (:arguments 
+                  ( ("arrp" variable
+                       (:pointer 1
+                        :type ("arrayPiece" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [66 90])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [91 100]))                  
+                :type "void")
+                nil [46 187]))          
+      :file "ArrayPiece.c"
+      :pointmax 188
+      :fsize 173
+      :lastmodtime '(21802 46576 646701 701000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ArrayPiece.c~"
       :major-mode 'c-mode
       :tags 
         '( ("Arraypiece.h" include (:system-flag t) nil [1 24])
@@ -29,12 +51,11 @@
                     ("size" variable (:type "int") (reparse-symbol arg-sub-list) [71 80]))                  
                 :type "void")
                 nil [26 153]))          
-      :file "ArrayPiece.c"
+      :file "ArrayPiece.c~"
       :pointmax 154
-      :fsize 153
-      :lastmodtime '(21801 61515 508653 767000)
-      :unmatched-syntax nil)
-)
+      :fsize 173
+      :lastmodtime '(21802 46133 378685 915000)
+      :unmatched-syntax nil))
   :file "!home!user!Desktop!ConstantTimeCollection!src!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

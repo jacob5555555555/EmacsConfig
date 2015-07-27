@@ -1,0 +1,14 @@
+;; Object onlyJs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "onlyJs/"
+  :tables
+  (list
+    (semanticdb-table "test.html"
+      :major-mode 'html-mode
+      :tags nil
+      :file "test.html"
+      :pointmax 17
+      :unmatched-syntax nil))
+  :file "!home!user!Desktop!onlyJs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -7,6 +7,8 @@
       :major-mode 'c-mode
       :tags 
         '( ("ARRAYPIECE_H" variable (:constant-flag t) nil [30 42])
+            ("ARRAYPIECE_H" variable (:constant-flag t) nil [30 42])
+            ("ARRAYPIECE_H" variable (:constant-flag t) nil [30 42])
             ("COLLECTION_TYPE" variable (:constant-flag t) nil [76 91])
             ("index_t" type
                (:typedef ("int")
@@ -106,8 +108,7 @@
       :lastmodtime '(21801 60712 340625 164000)
       :unmatched-syntax nil
       :lexical-table 
-        '(("COLLECTION_TYPE" . ((INT "int" 92 . 95)))
-          ("ARRAYPIECE_H")
+        '(("ARRAYPIECE_H")
           )
 ))
   :file "!home!user!Desktop!ConstantTimeCollection!include!semantic.cache"

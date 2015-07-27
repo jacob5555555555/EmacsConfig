@@ -18,12 +18,12 @@
             ("main" function (:arguments ("$(OBJ_FILES)")) nil [636 683])
             ("obj/%.o" function (:arguments ("src/%.c")) nil [684 754])
             ("DEPS" variable (:default-value ("$(OBJ_FILES:.o=.d)")) nil [791 818])
-            ("check-syntax" function nil nil [859 917]))          
+            ("check-syntax" function nil nil [859 919]))          
       :file "Makefile"
-      :pointmax 917
+      :pointmax 919
       :fsize 918
-      :lastmodtime '(21802 45001 446645 604000)
-      :unmatched-syntax '((shell-command 874 . 916) (bol 873 . 873) (semantic-list 851 . 857) (punctuation 850 . 851) (symbol 841 . 849) (bol 841 . 841) (semantic-list 819 . 840) (punctuation 818 . 819) (bol 818 . 818) (semantic-list 910 . 919) (punctuation 909 . 910) (symbol 906 . 908) (semantic-list 895 . 905) (punctuation 894 . 895) (symbol 884 . 893) (symbol 881 . 883) (symbol 877 . 880) (bol 873 . 873) (semantic-list 851 . 857) (punctuation 850 . 851) (symbol 841 . 849) (bol 841 . 841) (semantic-list 819 . 840) (punctuation 818 . 819) (bol 818 . 818) (semantic-list 910 . 912) (punctuation 909 . 910) (symbol 906 . 908) (semantic-list 895 . 905) (punctuation 894 . 895) (symbol 884 . 893) (symbol 881 . 883) (symbol 877 . 880) (bol 873 . 873) (semantic-list 851 . 857) (punctuation 850 . 851) (symbol 841 . 849) (bol 841 . 841) (semantic-list 819 . 840) (punctuation 818 . 819) (bol 818 . 818) (symbol 906 . 908) (semantic-list 895 . 905) (punctuation 894 . 895) (symbol 884 . 893) (symbol 881 . 883) (symbol 877 . 880) (bol 873 . 873) (semantic-list 851 . 857) (punctuation 850 . 851) (symbol 841 . 849) (bol 841 . 841) (semantic-list 819 . 840) (punctuation 818 . 819) (bol 818 . 818))))
+      :lastmodtime '(21802 46212 554688 734000)
+      :unmatched-syntax '((shell-command 874 . 918) (bol 873 . 873) (semantic-list 851 . 857) (punctuation 850 . 851) (symbol 841 . 849) (bol 841 . 841) (semantic-list 819 . 840) (punctuation 818 . 819) (bol 818 . 818) (shell-command 874 . 918) (bol 873 . 873) (shell-command 874 . 915) (bol 873 . 873) (semantic-list 851 . 857) (punctuation 850 . 851) (symbol 841 . 849) (bol 841 . 841) (semantic-list 819 . 840) (punctuation 818 . 819) (bol 818 . 818))))
   :file "!home!user!Desktop!ConstantTimeCollection!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

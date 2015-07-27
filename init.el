@@ -15,6 +15,8 @@
 ;;(key-chord-define-global "fj" 'ace-jump-char-mode)
 (key-chord-define-global "dk" 'line-jump-then-to-indent)
 (global-set-key (kbd "C-;") 'ace-jump-char-mode)
+(global-set-key (kbd "M-g w") 'ace-jump-word-mode)
+(global-set-key (kbd "M-g l") 'ace-jump-line-mode)
 
 ;;multiple cursors
 (require 'multiple-cursors)
@@ -136,15 +138,23 @@
 
 ;;show paren mode
 (show-paren-mode)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ede-project-directories (quote ("/home/user/Desktop/ConstantTimeCollection"))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
+;;projectile ;no longer installed, keep in case I want it again
+;(setq projectile-enable-caching t) ;;this lets projectile cache files it found in the project
+;;helm projectile
+;(projectile-global-mode)
+;(setq projectile-completion-system 'helm)
+;(helm-projectile-on)
+
+;;rainbow delimeters mode
+(rainbow-delimiters-mode)
+
+;;javascript mode-line
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+(add-hook 'js2-mode-hook 'ac-js2-mode)
+(setq ac-js2-evaluate-calls t)
+(autoload 'js3-mode "js3" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js3-mode))
+
+;;enable all disabled commands
+(setq disabled-command-function nil)

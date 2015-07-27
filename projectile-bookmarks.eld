@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/Desktop/onlyJs/" "~/emacs-24.4/" "~/Desktop/ConstantTimeCollection/")
